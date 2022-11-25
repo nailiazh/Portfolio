@@ -1,0 +1,78 @@
+
+body {
+    font-family: 'Readex Pro', sans-serif;
+    width: 100%;
+    background-color: #F3F6FB;
+}
+@media (min-width: 768px) { 
+    .home{
+    height: 100vh;
+    } 
+    .intro{
+        height: 100vh;
+    }
+    .option{
+        height: 100vh;
+    }
+    .design{
+        height: 100vh;
+    }
+}
+/* ========== section==========  */
+.home{ 
+    background-color: #7e86ce;
+    /* padding-top: 4rem; */
+} 
+.intro{
+    background:
+    radial-gradient(
+        100vw 100vh at top,
+        #7e86ce,
+        #F3F6FB
+    );
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+.option{
+    background-color: #FFFFFD
+}
+.footer{
+    background-color: ;
+}
+/* ========== background==========  */
+.bg-light-glass {
+    /* From https://css.glass */
+    /* background-image: url(/asset/images/headerbg.png); */
+    backdrop-filter: blur(9px);
+    -webkit-backdrop-filter: blur(9px);
+    border: 1px solid rgba(248, 249, 250, 0.3);
+    /* background-color: #E8F0FA; */
+}
+/* =========== Text =========== */
+.home-header{
+    font-size: 4.6rem;
+    font-weight: 100;
+    color: #fff;
+    /* background-color: #4988db; */
+}
+.home-text{
+    font-weight: 400;
+}
+.intro-header{
+    font-size: 4rem;
+    font-weight:500;
+}
+.text-dark-lavender{
+    color: #5763B5;
+}
+.text-light-lav{
+    color: #ccd1fa;
+}
+.text-indigo{
+    color: #5F6EEA;
+}
+
+/* ------ img ------- */
+.profile{
+    width: 500px;
+}

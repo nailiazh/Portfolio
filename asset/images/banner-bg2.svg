@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW X7 -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="1440px" height="733px" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 1440 733"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .fil1 {fill:none}
+    .fil0 {fill:url(#id5)}
+   ]]>
+  </style>
+   <clipPath id="id0">
+    <path d="M3 1l1440 0 0 733 -1440 0 0 -733z"/>
+   </clipPath>
+    <clipPath id="id1">
+     <path d="M168 1l1275 0 0 733 -1275 0 0 -733z"/>
+    </clipPath>
+    <clipPath id="id2">
+     <path d="M168 1l0 733 1275 0 0 -733 -1275 0z"/>
+    </clipPath>
+    <clipPath id="id3">
+     <path d="M168 1l1275 0 0 733 -1275 0 0 -733z"/>
+    </clipPath>
+    <clipPath id="id4">
+     <path d="M3 1l1440 0 0 733 -1440 0 0 -733z"/>
+    </clipPath>
+  <linearGradient id="id5" gradientUnits="userSpaceOnUse" x1="986.999" y1="790.432" x2="458.566" y2="-55.0619">
+   <stop offset="0" style="stop-opacity:1; stop-color:#DFC1A7"/>
+   <stop offset="0.501961" style="stop-opacity:1; stop-color:#DCAEB1"/>
+   <stop offset="1" style="stop-opacity:1; stop-color:#E28D86"/>
+  </linearGradient>
+ </defs>
+ <g id="Layer_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <polygon class="fil0" points="3,1 1443,1 1443,734 3,734 "/>
+  <g style="clip-path:url(#id0)">
+   <g id="_563240688">
+   </g>
+   <g style="clip-path:url(#id1)">
+   </g>
+   <g style="clip-path:url(#id2)">
+    <image x="168" y="-349" width="1546" height="1458" xlink:href="banner-bg2_Images\banner-bg2_ImgID1.png"/>
+   </g>
+   <g style="clip-path:url(#id3)">
+   </g>
+   <g style="clip-path:url(#id4)">
+   </g>
+  </g>
+  <polygon class="fil1" points="3,1 1443,1 1443,734 3,734 "/>
+ </g>
+</svg>
