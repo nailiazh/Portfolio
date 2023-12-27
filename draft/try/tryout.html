@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Food Order App</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="my-4">Food Order App</h1>
+        
+        <!-- Menu -->
+        <div id="menu" class="mb-4">
+            <!-- Menu items will be dynamically added here -->
+        </div>
+
+        <!-- Shopping Cart -->
+        <div id="cart" class="mb-4">
+            <h3>Shopping Cart</h3>
+            <ul id="cart-items" class="list-group">
+                <!-- Cart items will be dynamically added here -->
+            </ul>
+            <p>Total: $<span id="total">0.00</span></p>
+            <button class="btn btn-primary" onclick="checkout()">Checkout</button>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.9/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

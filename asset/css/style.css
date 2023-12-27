@@ -157,14 +157,17 @@ body {
     width: 100vw;
     border-radius: 0 0 700px 700px;
     background-color: #daebdf;
-    padding-top: 22rem;
+    padding-top: 20rem;
 }
 .intro-body{
     border-radius: 27px;
     padding: 3rem;
     backdrop-filter: blur(9px);
     -webkit-backdrop-filter: blur(9px);
-    background-color: #1717179f;
+    background-color: #fbfdff9f;
+    border: solid #fff 0.071rem;
+    box-shadow: #8eb39b52 0px 25px 50px -10px, #8eb39b52 0px 15px 30px -15px;
+    margin-bottom: 40px;
 }
 .portfolio{
     height: 100vh;
@@ -293,7 +296,7 @@ body {
 
 /* =========== Text =========== */
 .home-header{
-    font-size: 5.6rem;
+    font-size: 5.2rem;
     font-weight: 200;
     color: #171717;
     font-family: 'Raleway', sans-serif;
@@ -353,21 +356,24 @@ body {
 }
 .port-nav{
     font-size: 1.4rem;
-    color: #969DDA;
+    color: #94aac7;
     text-decoration: none;
 }
 .port-nav:hover{
-    color: #FCB43C;
+    color: #80AE9C;
 }
 .port-nav:focus{
-    color: #F36A8D;
+    color: #171717;
 }
 .port-head{
     font-size: 1.4rem;
 }
 /* ------ img ------- */
-.profile{
-    width: 500px;
+.profile-picture{
+    width: 350px;
+    height: 350px;
+    object-fit: scale-down;
+
 }
 /* element */
 .buton-wraper{

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Note Taking App</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+
+        .container {
+            margin-top: 50px;
+        }
+
+        #note-list {
+            margin-top: 20px;
+        }
+
+        #note-list .card {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Note Taking App</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <form id="note-form">
+                    <div class="form-group">
+                        <label for="noteTitle">Title:</label>
+                        <input type="text" class="form-control" id="noteTitle" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="noteContent">Note:</label>
+                        <textarea class="form-control" id="noteContent" rows="4" required></textarea>
+                    </div>
+                    <button type="button" class="btn btn-primary" onclick="addNote()">Add Note</button>
+                </form>
+            </div>
+            <div class="col-md-6">
+                <div id="note-list">
+                    <!-- Notes will be displayed here -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.9/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        function addNote() {
+            // Get values from the form
+            var title = document.getElementById("noteTitle").value;
+            var content = document.getElementById("noteContent").value;
+
+            // Clear the form fields
+            document.getElementById("noteTitle").value = "";
+            document.getElementById("noteContent").value = "";
+
+            // Create a new note card
+            var noteList = document.getElementById("note-list");
+            var card = document.createElement("div");
+            card.className = "card";
+            card.innerHTML = `
+                <div class="card-body">
+                    <h5 class="card-title">${title}</h5>
+                    <p class="card-text">${content}</p>
+                </div>
+            `;
+
+            // Append the card to the note list
+            noteList.appendChild(card);
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,148 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scheduling App</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    body {
+      background-color: #f8f9fa;
+    }
+
+    .container {
+      margin-top: 50px;
+    }
+
+    #schedule-list {
+      margin-top: 20px;
+    }
+
+    #schedule-list .card {
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h2>Scheduling App</h2>
+    <div class="row">
+      <div class="col-md-6">
+        <form id="schedule-form">
+          <div class="form-group">
+            <label for="scheduleTitle">Title:</label>
+            <input type="text" class="form-control" id="scheduleTitle" required>
+          </div>
+          <div class="form-group">
+            <label for="scheduleDescription">Description:</label>
+            <textarea class="form-control" id="scheduleDescription" rows="3"></textarea>
+          </div>
+          <div class="form-group">
+            <label for="startTime">Start Time:</label>
+            <input type="datetime-local" class="form-control" id="startTime" required>
+          </div>
+          <div class="form-group">
+            <label for="endTime">End Time:</label>
+            <input type="datetime-local" class="form-control" id="endTime" required>
+          </div>
+          <button type="button" class="btn btn-primary" onclick="addSchedule()">Add Schedule</button>
+        </form>
+      </div>
+      <div class="col-md-6">
+        <div id="schedule-list">
+          <!-- Schedules will be displayed here -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.9/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script>
+    function addSchedule() {
+      // Get values from the form
+      var title = document.getElementById("scheduleTitle").value;
+      var description = document.getElementById("scheduleDescription").value;
+      var startTime = document.getElementById("startTime").value;
+      var endTime = document.getElementById("endTime").value;
+
+      // Clear the form fields
+      document.getElementById("scheduleTitle").value = "";
+      document.getElementById("scheduleDescription").value = "";
+      document.getElementById("startTime").value = "";
+      document.getElementById("endTime").value = "";
+
+      // Create a new schedule card
+      var scheduleList = document.getElementById("schedule-list");
+      var card = document.createElement("div");
+      card.className = "card";
+      card.innerHTML = `
+        <div class="card-body">
+          <h5 class="card-title">${title}</h5>
+          <p class="card-text">${description}</p>
+          <p class="card-text">Start Time: ${startTime}</p>
+          <p class="card-text">End Time: ${endTime}</p>
+          <button class="btn btn-warning" onclick="editSchedule(${id})">Edit</button>
+          <button class="btn btn-danger" onclick="deleteSchedule(${id})">Delete</button>
+        </div>
+      `;
+
+      // Append the card to the schedule list
+      scheduleList.appendChild(card);
+
+      // Send data to the server (you can use fetch or axios for a real server)
+      fetch('http://localhost:3001/api/schedules', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ title, description, startTime, endTime }),
+      })
+        .then(response => response.json())
+        .then(data => console.log(data))
+        .catch(error => console.error('Error:', error));
+    }
+
+    function editSchedule(id) {
+      // Implement editing logic here
+      console.log('Editing schedule with ID:', id);
+    }
+
+    function deleteSchedule(id) {
+      // Implement deletion logic here
+      console.log('Deleting schedule with ID:', id);
+    }
+
+    // Fetch and display existing schedules on page load
+    document.addEventListener('DOMContentLoaded', function () {
+      fetch('http://localhost:3001/api/schedules')
+        .then(response => response.json())
+        .then(data => {
+          var scheduleList = document.getElementById("schedule-list");
+          data.forEach(schedule => {
+            var card = document.createElement("div");
+            card.className = "card";
+            card.innerHTML = `
+              <div class="card-body">
+                <h5 class="card-title">${schedule.title}</h5>
+                <p class="card-text">${schedule.description}</p>
+                <p class="card-text">Start Time: ${schedule.start_time}</p>
+                <p class="card-text">End Time: ${schedule.end_time}</p>
+                <button class="btn btn-warning" onclick="editSchedule(${schedule.id})">Edit</button>
+                <button class="btn btn-danger" onclick="deleteSchedule(${schedule.id})">Delete</button>
+              </div>
+            `;
+            scheduleList.appendChild(card);
+          });
+        })
+        .catch(error => console.error('Error:', error));
+    });
+  </script>
+</body>
+
+</html>
