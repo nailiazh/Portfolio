@@ -6,51 +6,65 @@
         <title> Naili Azizah </title>
         <link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="asset/dist/css/bootstrap.min.css">
-        <link rel="stylesheet" href="asset/css/form-control.css">
-        <link rel="stylesheet" href="asset/css/slider.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.css">
         <link rel="stylesheet" href="asset/css/style.css">
-        <link rel="stylesheet" href="asset/css/style.scss">
-        <link rel="stylesheet" href="asset/css/component.css">
 		<link rel="shortcut icon" href="asset/images/favon.png"/>
     </head>
-    <body class="">
+    <body class="p-0">
         <!-- Home -->
-        <section id="home" class="home row my-0">
-            <div class="animation-bg">
+        <section id="home" class="home">
+            <div class="animation-bg" style="margin-top: -50px;">
                 <div class="ball"></div>
                 <div class="ball1"></div>
                 <div class="ball2"></div>
             </div>
-            <div class="col-lg-10 mx-auto mt-5 home-body">
+            <div class="col-lg-11 mx-auto mt-5 home-body">
                 <div class="home-col ms-auto mt-5"> 
-                    <div class="mt-5 text-right home-col-1">
-                        <h3 class="home-header1">Hello</h3>
-                        <h3 class="home-header1">World</h3>
+                    <div class="col mt-5 text-right home-col-1">
+                        <h2 class="home-header1">Hello World</h2>
+                        <h2 class="home-header home-title">I'm</h2>
+                        <h2 class="home-header pb-3">Naili Azizah</h2>
                     </div>
-                    <div class="text-left mt-5 home-col-2">
+                    <div class="col-md text-left mt-5 home-col-2 bg-light-glass">
                         <div class="my-auto mx-4">
-                            <h3 class="home-header">I'm</h3>
-                            <h3 class="home-header">Naili Azizah</h3>
+                            <div class="px-3">
+                                <h4 class="profile-title">Im a Beginner Front-End Developer</h4>
+                                <h6 style="color: #E2E8F0; font-weight: lighter;font-family: 'Readex Pro';">A beginner front-end developer based in East Java Region, Indonesia. A beginner programmer who like to explore programming world and being helpful to solve problems.</h6>
+                                    <div class="col-5">
+                                        <h6 class="profile-sub-title">Skills</h6>
+                                        <i style="color: #b1baff;" class="fa-2xl fa-solid fa-brands fa-html5"></i>
+                                        <i style="color: #b1baff;" class="fa-2xl fa-solid fa-brands mx-2 fa-css3-alt"></i>
+                                        <i style="color: #b1baff;" class="fa-2xl me-2 fa-brands fa-js"></i>
+                                        <i style="color: #b1baff;" class="fa-2xl me-2 fa-brands fa-php"></i>
+                                    </div>
+                                    <div class="col">
+                                        <h6 class="profile-sub-title mt-2">Tools, Libraries, & Frameworks</h6>
+                                        <i style="color: #b1baff;" class="fa-2xl fa-brands fa-bootstrap my-0"></i>
+                                        <i style="color: #b1baff;" class="fa-2xl fa-brands mx-2 fa-git my-0"></i>
+                                        <i style="color: #b1baff;" class="fa-2xl fa-brands me-2 fa-github my-0"></i>
+                                        <i style="color: #b1baff;" class="fa-2xl fa-brands me-2 fa-laravel my-0"></i>
+                                        <i style="color: #b1baff;" class="fa-2xl fa-brands me-2 fa-react"></i>
+                                        <i style="color: #b1baff;" class="fa-2xl fa-brands fa-node"></i>
+                                    </div>
+                            </div>
                         </div> 
                     </div>
                 </div>
             </div> 
           </div> 
         </section>
-        <div class="col-lg-8 navigasibar shadow-sm mx-auto mb-5 sticky-bottom" style="margin-top: -100px;">
+        <div class="col-lg-9 nav-bar bg-light-glass mx-auto mb-5" style="margin-top: -150px;">
             <div class="row m-0">
                 <div class="col-lg-2">
                     <a class="fw-bold teks text-center" href="#home"><h4>Hi.</h4></a>
                 </div>
                 <div class="col-lg-10 row">
                     <div class="col-lg text-center">
-                        <a class="teks mx-2 my-3" href="#profile">Profile</a>
-                        <a class="teks mx-2 my-3" href="#portfolio">Portfolio</a>
-                        <a class="teks mx-2 my-3" href="#about">About Me</a>
+                        <a id="#portfolio" class="teks mx-2 my-3 active" href="#portfolio">See My Portfolio</a>
+                        <a id="#resume" class="teks mx-2 my-3" href="#cv">Who I Am</a>
                     </div> 
                     <div class="col-lg text-center">
-                        <a style="color:#2C2C2C; text-decoration: none;" class="mx-2">Find Me</a>
+                        <a style="color:#B1BAFF; text-decoration: none;" class="mx-2">Find Me</a>
                         <span class="buton-wraper text-right">
                             <a type="button" class="buton" href="https://github.com/nailiazh"> <i class="fa-brands fa-github" ></i></a>
                             <a type="button" class="buton"  style="text-decoration: none; font-size: 0.8rem;" href="https://glitch.com/@nailiazh">Glitch</a>
@@ -61,82 +75,231 @@
                 </div>
             </div>
         </div>
-        <section id="portfolio" class="portfolio row py-5">
-            <div  class="container row col-lg-10 py-5 my-auto">
-                <div class="col-lg-2 col-sm-2 mx-auto">
-                    <div class="tab-button text-left mb-3"  role="tablist">
-                        <a class="col port-nav text-center mx-1  active" id="nav-app-tab" data-bs-toggle="tab" href="#nav-app"  role="tab" aria-controls="nav-code" aria-selected="true">App</a>
-                        <a class="col port-nav text-center mx-1 " id="nav-comp-tab" data-bs-toggle="tab" href="#nav-comp"  role="tab" aria-controls="nav-design" aria-selected="false">Components</a>
-                        <a class="col port-nav text-center mx-1 " id="nav-pages-tab" data-bs-toggle="tab" href="#nav-pages"  role="tab" aria-controls="nav-games" aria-selected="false">Landing Page</a>
-                        <!-- <a class="col text-center mx-1 nav-link" id="nav-contact-tab" data-bs-toggle="tab" href="#nav-contact"  role="tab" aria-controls="nav-contact" aria-selected="false">Play with CSS</a> -->
-                    </div> 
+        <section id="portfolio" class="portfolio row pt-5">
+            <div class="container row m-2 mt-5">
+                <div class="col-2 m-auto ps-5 bg-nav-tab-pane">
+                    <ul style="display: flex; flex-direction: column;" class="text-center nav nav-tabs mx-auto" id="myTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="home-tab" data-bs-toggle="tab" data-bs-target="#comp" type="button" role="tab" aria-controls="home" aria-selected="true">Components</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#pages" type="button" role="tab" aria-controls="profile" aria-selected="false">Pages</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#app" type="button" role="tab" aria-controls="contact" aria-selected="false">Mobile Apps</button>
+                        </li>
+                    </ul>
                 </div>
-                <div class="col-lg-10 tab-content mx-auto my-5" style="height:40vh;" id="nav-tabContent">
-                    <!-- app -->
-                    <div class="tab-pane fade show active" id="nav-app" role="tabpanel" aria-labelledby="nav-app-tab">
-                        <p class="port-head">Simple App Portfolio</p>
-                        <div class="col-lg-10 mx-auto row tab-body">
-                            <div class="col-2">
-                                <p>23 aug - 12 nov 22</p>
-                            </div>
-                            <div class="col-2">
-                                <p style="border-bottom: 1px solid #2C2C2C;"> <i style="color:#F5F6FB">-</i> </p>
-                            </div>
-                            <div class="col">
-                                <div class="bg-tab-card shadow-sm p-5">
-                                    <h2>Hello</h2>
+                <div class="col-10 tab-content mt-3" id="myTabContent">
+                    <div style="overflow-y: scroll; height: 70vh; border-radius: 16px;" class="tab-pane fade show active p-3" id="comp" role="tabpanel" aria-labelledby="home-tab">
+                        <div class="row row-cols-1 row-cols-md-3 g-4">
+                              <div class="col ">
+                                <div class="card bg-dark text-white mx-2">
+                                    <img src="https://i.pinimg.com/564x/cf/0c/71/cf0c7130af8440ed7ad0aa55d00e7dd0.jpg" class="card-img card-images" alt="...">
+                                    <div style="display: grid; height: 100%; align-items: flex-end;" class="card-img-overlay"> 
+                                        <p class="card-text my-0" style="color: #fff; bottom: 0;">Last updated 3 mins ago</p>
+                                        <div style="display: flex; flex-direction: row;" class="my-0">
+                                            <button class="btn btn-outline-light btn-block">Details</button>
+                                            <button class="btn btn-outline-light"><i class="fa-solid fa-download"></i></button>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
+                              </div>
+                              <div class="col ">
+                                <div class="card bg-dark text-white mx-2">
+                                    <img src="https://i.pinimg.com/564x/4c/8e/70/4c8e70d1d75a51a4ae189ee7860c22d2.jpg" class="card-img card-images" alt="...">
+                                    <div class="card-img-overlay">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    <p class="card-text">Last updated 3 mins ago</p>
+                                    </div>
+                                </div>
+                              </div>
+                              <div class="col ">
+                                <div class="card bg-dark text-white mx-2">
+                                <img src="https://i.pinimg.com/564x/93/32/20/9332208313edd38f7b0dc957cb050e77.jpg" class="card-img card-images" alt="...">
+                                <div class="card-img-overlay">
+                                  <h5 class="card-title">Card title</h5>
+                                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                  <p class="card-text">Last updated 3 mins ago</p>
+                                </div>
+                                </div>
+                              </div>
+                              <div class="col ">
+                                <div class="card bg-dark text-white mx-2">
+                                <img src="https://i.pinimg.com/564x/cf/0c/71/cf0c7130af8440ed7ad0aa55d00e7dd0.jpg" class="card-img card-images" alt="...">
+                                <div class="card-img-overlay">
+                                  <h5 class="card-title">Card title</h5>
+                                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                  <p class="card-text">Last updated 3 mins ago</p>
+                                </div>
+                                </div>
+                              </div>
+                              <div class="col ">
+                                <div class="card bg-dark text-white mx-2">
+                                <img src="https://i.pinimg.com/564x/4c/8e/70/4c8e70d1d75a51a4ae189ee7860c22d2.jpg" class="card-img card-images" alt="...">
+                                <div class="card-img-overlay">
+                                  <h5 class="card-title">Card title</h5>
+                                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                  <p class="card-text">Last updated 3 mins ago</p>
+                                </div>
+                                </div>
+                              </div>
+                              <div class="col ">
+                                <div class="card bg-dark text-white mx-2">
+                                <img src="https://i.pinimg.com/564x/93/32/20/9332208313edd38f7b0dc957cb050e77.jpg" class="card-img card-images" alt="...">
+                                <div class="card-img-overlay">
+                                  <h5 class="card-title">Card title</h5>
+                                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                  <p class="card-text">Last updated 3 mins ago</p>
+                                </div>
+                                </div>
+                              </div>
+                              <div class="col ">
+                                <div class="card bg-dark text-white mx-2">
+                                <img src="https://i.pinimg.com/564x/cf/0c/71/cf0c7130af8440ed7ad0aa555d00e7dd0.jpg" class="card-img card-images" alt="...">
+                                <div class="card-img-overlay">
+                                  <h5 class="card-title">Card title</h5>
+                                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                  <p class="card-text">Last updated 3 mins ago</p>
+                                </div>
+                                </div>
+                              </div>
+                              <div class="col ">
+                                <div class="card bg-dark text-white mx-2">
+                                <img src="https://i.pinimg.com/564x/4c/8e/70/4c8e70d1d75a51a4ae189ee7860c22d2.jpg" class="card-img card-images" alt="...">
+                                <div class="card-img-overlay">
+                                  <h5 class="card-title">Card title</h5>
+                                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                  <p class="card-text">Last updated 3 mins ago</p>
+                                </div>
+                                </div>
+                              </div>
+                              <div class="col ">
+                                <div class="card bg-dark text-white mx-2">
+                                <img src="https://i.pinimg.com/564x/93/32/20/9332208313edd38f7b0dc957cb050e77.jpg" class="card-img card-images" alt="...">
+                                <div class="card-img-overlay">
+                                  <h5 class="card-title">Card title</h5>
+                                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                  <p class="card-text">Last updated 3 mins ago</p>
+                                </div>
+                                </div>
+                              </div>
+                              <div class="col ">
+                                <div class="card bg-dark text-white mx-2">
+                                <img src="https://i.pinimg.com/564x/cf/0c/71/cf0c7130af8440ed7ad0aa55d00e7dd0.jpg" class="card-img card-images" alt="...">
+                                <div class="card-img-overlay">
+                                  <h5 class="card-title">Card title</h5>
+                                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                  <p class="card-text">Last updated 3 mins ago</p>
+                                </div>
+                                </div>
+                              </div>
+                              <div class="col ">
+                                <div class="card bg-dark text-white mx-2">
+                                <img src="https://i.pinimg.com/564x/4c/8e/70/4c8e70d1d75a51a4ae189ee7860c22d2.jpg" class="card-img card-images" alt="...">
+                                <div class="card-img-overlay">
+                                  <h5 class="card-title">Card title</h5>
+                                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                  <p class="card-text">Last updated 3 mins ago</p>
+                                </div>
+                                </div>
+                              </div>
+                              <div class="col ">
+                                <div class="card bg-dark text-white mx-2">
+                                <img src="https://i.pinimg.com/564x/93/32/20/9332208313edd38f7b0dc957cb050e77.jpg" class="card-img card-images" alt="...">
+                                <div class="card-img-overlay">
+                                  <h5 class="card-title">Card title</h5>
+                                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                  <p class="card-text">Last updated 3 mins ago</p>
+                                </div>
+                                </div>
+                              </div>
                         </div>
                     </div>
-                    <!-- components -->
-                    <div class="tab-pane fade" id="nav-comp" role="tabpanel" aria-labelledby="nav-comp-tab">
-                        <p class="port-head"> Web Components Portfolio</p>
+                    <div style="overflow-y: scroll; height: 70vh; border-radius: 16px;" class="tab-pane fade p-3" id="pages" role="tabpanel" aria-labelledby="profile-tab">
+                        <div class="card-group">
+                             <div class="card bg-dark text-white mx-2">
+                                <img src="https://i.pinimg.com/564x/04/77/4b/04774b0cfdb581be3653ac9ef23972b6.jpg" class="card-img card-images" alt="...">
+                                <div class="card-img-overlay">
+                                  <h5 class="card-title">Card title</h5>
+                                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                  <p class="card-text">Last updated 3 mins ago</p>
+                                </div>
+                              </div>
+                              <div class="card bg-dark text-white mx-2">
+                                <img src="https://i.pinimg.com/564x/ee/3e/f2/ee3ef231a064d6e45ee56d5883f1db15.jpg" class="card-img card-images" alt="...">
+                                <div class="card-img-overlay">
+                                  <h5 class="card-title">Card title</h5>
+                                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                  <p class="card-text">Last updated 3 mins ago</p>
+                                </div>
+                              </div>
+                              <div class="card bg-dark text-white mx-2">
+                                <img src="https://i.pinimg.com/564x/39/a6/e0/39a6e0e85fb1c15569a470c1628c54bf.jpg" class="card-img card-images" alt="...">
+                                <div class="card-img-overlay">
+                                  <h5 class="card-title">Card title</h5>
+                                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                  <p class="card-text">Last updated 3 mins ago</p>
+                                </div>
+                              </div>
+                        </div>
                     </div>
-                    <!-- pages -->
-                    <div class="tab-pane fade" id="nav-pages" role="tabpanel" aria-labelledby="nav-pages-tab">
-                        <p class="port-head"> Landing Page Portfolio</p>
-                    </div>
+                    <div style="overflow-y: scroll; height: 70vh; border-radius: 16px;" class="tab-pane fade p-3" id="app" role="tabpanel" aria-labelledby="contact-tab">
+                        <div class="card-group">
+                              <div class="card bg-dark text-white mx-2">
+                                <img src="https://i.pinimg.com/564x/34/8d/bf/348dbf3bf629d6732b074a6fc34fe353.jpg" class="card-img card-images" alt="...">
+                                <div class="card-img-overlay">
+                                  <h5 class="card-title">Card title</h5>
+                                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                  <p class="card-text">Last updated 3 mins ago</p>
+                                </div>
+                              </div>
+                              <div class="card bg-dark text-white mx-2">
+                                <img src="https://i.pinimg.com/564x/4b/3e/ea/4b3eea22e3967711f384ba0b776baa73.jpg" class="card-img card-images" alt="...">
+                                <div class="card-img-overlay">
+                                  <h5 class="card-title">Card title</h5>
+                                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                  <p class="card-text">Last updated 3 mins ago</p>
+                                </div>
+                              </div>
+                              <div class="card bg-dark text-white mx-2">
+                                <img src="https://i.pinimg.com/564x/b6/ef/e3/b6efe371ab27e5bd27b44cd0b84b9b64.jpg" class="card-img card-images" alt="...">
+                                <div class="card-img-overlay">
+                                  <h5 class="card-title">Card title</h5>
+                                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                  <p class="card-text">Last updated 3 mins ago</p>
+                                </div>
+                              </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="intro">
-            
+        <section>
+          <img src="https://i.pinimg.com/564x/70/57/0f/70570f68bc0f95749a9c983794de5903.jpg" alt="">
         </section>
-        
-        <section id="resume">
-            
-        </section>
-        <section class="footer row justify-content-center px-5">
-            <div class="col-lg-2 mt-4 mx-auto px-2 px-5 py-2">
-                <h5 class="head-footer mt-3 text-sm-center">Pravelist.</h5>
-                    <a href="#home" class="nav-link text-light text-2x text-sm-center">Home</a>
-                    <a href="#collection" class="nav-link text-light text-2x text-sm-center">Collection</a>
-                    <a href="#about" class="nav-link text-light text-2x text-sm-center">About</a>
-                    <a href="#contact" class="nav-link text-light text-sm-center">Contact Us</a>
+        <section style="border-radius: 3px;" id="cv" class="bg-light-glass col-8 mx-auto py-5 px-5">
+            <div class="row justify-content-center">
+              <div class="col-4">
+                <img class="profile-picture" src="asset/images/profile-pc.png" alt="">
+                <img src="asset/images/hexagon.png" class="profile-picture-bg" alt="">
+              </div>
+              <div class="col-8">
+                <h6 class="cv-text">As an enthusiastic beginner in front-end development, I am passionate about exploring the dynamic world of programming. I possess a strong foundation in HTML, CSS, and JavaScript, and I am eager to apply my skills in real-world projects. My keen interest in learning new technologies, combined with a dedication to creating seamless and engaging user experiences, drives me to continuously improve and grow in the field. I am seeking an entry-level front-end development position where I can contribute my skills and enthusiasm to a collaborative team environment.</h6>
+              </div>
             </div>
-            <div class="col-lg-5 mt-4 p-3 text-center">
-                <h5 class="head-footer mt-3">Follow Us !</h5>
-                <div class="text-center">
-                    <a href="" class="text-footer fa-2x fa-brands fa-facebook text-light m-2"></a>
-                    <a href="" class="text-footer fa-2x fa-brands fa-twitter text-light m-2"></a>
-                    <a href="" class="text-footer fa-2x fa-brands fa-instagram text-light m-2"></a>
-                    <a href="" class="text-footer fa-2x fa-brands fa-youtube text-light m-2"></a>
-                </div>
-            </div>
-            <div class="col-lg-5 mt-4 mx-auto p-3">
-                <h5 class="text-center text-uppercase head-footer text-1x">Stay Up To Date</h5>
-                <h5 class="text-just text-footer text-2x">Newsletters are great. We happen to write some, too. We cover guides, fun fact, stories, discounts, and other stuff.</h5>
-                <div class="d-flex my-3">    
-                    <input type="text" class="form-control" placeholder="Your Email Here">
-                    <button class="mx-2 btn btn-sm btn-block btn-outline-light">Subs Now</button>
-                </div>
+            <div class="col-10">
+                <!-- <h1>Hello</h1> -->
             </div>
         </section> 
     </body>    
-        <script src="asset/js/popper.js"></script>
-        <script src="asset/js/jquery-3.6.1.min.js"></script>
-        <script src="asset/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Bootstrap 5.1.3 JS, Popper.js, and optionally jQuery -->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+        <!-- Navbar -->
+        <script src="asset/js/navbar.js"></script>
+        <!-- Optional: jQuery (if you need it for other purposes) -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <script src="https://kit.fontawesome.com/73f60c743c.js" crossorigin="anonymous"></script>
 </html>
